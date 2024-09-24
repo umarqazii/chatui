@@ -1,6 +1,7 @@
 // ChatWindow.js
 import React from 'react';
 import Message from './Message';
+import 'primeicons/primeicons.css';
 
 const ChatWindow = ({ selectedChat }) => {
   if (!selectedChat) return <div className="chat-window">Select a chat</div>;
@@ -17,8 +18,8 @@ const ChatWindow = ({ selectedChat }) => {
         ))}
       </div>
       <div className="message-input">
-        <input type="text" placeholder="Type a message here" />
-        <button>Send</button>
+        <input type="text" placeholder="Type a message here" style={{borderRadius: '10px'}}/>
+        <button style={{borderRadius: '10px'}}><i className="pi pi-send" style={{ fontSize: '1.5rem' }}></i></button>
       </div>
     </div>
   );
