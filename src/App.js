@@ -27,14 +27,15 @@ const App = () => {
       position: 'Designer'
     },
     {
-      name: 'Mommy',
-      lastMessage: 'when will you be back?',
-      avatar: 'https://img.20mn.fr/09sEXF8OTwukferKv9mPmCk/1444x920_35th-annual-glaad-media-awards-at-the-beverly-hilton-hotel-featuring-sydney-sweeney-where-beverly-hills-california-united-states-when-14-mar-2024-credit-media-punch-insta-rimages',
+      name: 'Wifey',
+      lastMessage: 'Hurry up, I\'m waiting ',
+      avatar: 'https://assets.vogue.in/photos/5f61e43c211a71e971416d87/1:1/w_2000,h_2000,c_limit/JSA_OTH_OTH_NDC%202020%20Wedding%20Scene%20with%20Ana_BTS_IMG_03.jpg',
       messages: [
         { text: 'where are you?', isSent: false },
         { text: 'I\'m in the office', isSent: true },
         { text: 'when will you be back?', isSent: false },
-        
+        { text: 'Soon Honey😘', isSent: true },
+        { text: 'Hurry up, I\'m waiting 👙👉🏻👌🏻👄💦', isSent: false },
 
       ],
       position: 'Mommy'

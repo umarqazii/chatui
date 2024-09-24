@@ -49,29 +49,38 @@
   display: flex;
 }
 
-.messages {
-  flex: 1;
-  padding: 10px;
-  background-color: #fafafa;
-  overflow-y: auto;
-}
-
 .message {
+  display: inline-block; /* Makes the message width fit the content */
+  max-width: 60%; /* Limit the maximum width for readability */
   padding: 10px;
   margin-bottom: 5px;
   border-radius: 10px;
+  word-wrap: break-word; /* Ensure long words wrap */
 }
 
 .message.sent {
   background-color: #0084ff;
   text-align: right;
   color: white;
+  align-self: flex-end; /* Align the sent message to the right */
 }
 
 .message.received {
   background-color: #cee1ef;
   text-align: left;
+  align-self: flex-start; /* Align the received message to the left */
 }
+
+.messages {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Optional: Adds spacing between messages */
+  padding: 10px;
+  background-color: #fafafa;
+  /* overflow-y: 100%; Enable vertical scrolling */
+  height: 90%;
+}
+
 
 .message-input {
   display: flex;
