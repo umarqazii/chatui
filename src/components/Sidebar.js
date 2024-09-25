@@ -5,7 +5,7 @@ const Sidebar = ({ chats, onSelectChat }) => {
   return (
     <div className="sidebar">
       <h2>Chats</h2>
-      <input type="text" placeholder="Search here" style={{ width: '90%' }} />
+      <input type="text" placeholder="Search here" style={{ width: '90%', padding: '10px', borderRadius: '6px' }} />
       <ul>
         {chats.map((chat, index) => (
           <li 

@@ -2,9 +2,18 @@
 import React from 'react';
 import Message from './Message';
 import 'primeicons/primeicons.css';
+import logo from '../assets/logo.png';
 
 const ChatWindow = ({ selectedChat }) => {
-  if (!selectedChat) return <div className="chat-window">Select a chat</div>;
+  if (!selectedChat) return (
+    <div className="chat-window">
+      <div style={{width:'100%', height:'100%', display:'flex', justifyContent:'center', alignItems:'center', flexDirection:'column'}}>
+        <img src={logo} alt="" />
+        <h3>Select a chat to view details</h3>
+      </div>
+    </div>
+  
+  );
 
   return (
     <div className="chat-window">
